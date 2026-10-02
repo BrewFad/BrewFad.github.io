@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8">
-
+	<title>Food Construct — О нас</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,16 +20,16 @@
 		<h1>Food Construct</h1>
 
 		<nav>
-			<a href="/">О нас</a>
-			<a href="/">Корзина</a>
+			<a id="active">О нас</a>
+			<a href="pages/takeLunch.html">Собрать ланч</a>
 			<a href="/">Заказы</a>
 			<a href="#footer">Контакты</a>
 		</nav>
 	</header>
 
-	<div class="main">
+	<main>
 		<article>
-			<img src = "images/lunch.jpg" />
+			<img src="images/lunch.jpg" alt="Бизнес-ланч Food Construct">
 		</article>
 
 		<section>
@@ -47,9 +48,9 @@
 		</section>
 		<section>
 			<h2>Топ-5 популярных блюд</h2>
-			<table border="1">
+			<table>
 				<tr>
-					<th>
+					<th></th>
 					<th>Название</th>
 					<th>Кол-во заказов в неделю</th>
 					<th>Цена</th>
@@ -91,7 +92,7 @@
 				</tr>
 				</table>
 		</section>
-	</div>
+	</main>
 
 	<footer id="footer"><P>Позвонить нам +7-000-000-00-00</P></footer>
 </body>

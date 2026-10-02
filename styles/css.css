@@ -3,10 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   line-height: 1.5;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight:bold;
 }
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 h1{
   font-size: 24px;
   margin: 16px 0px;
@@ -22,13 +33,17 @@ p, li, td{
 
 td, th {
   padding: 4px 8px;
+  border: 1px solid black;
 }
 
-div, header, main{
+header, main{
   margin: 24px 48px;
-  padding: 16px 4px ;
+  padding: 16px 4px;
+}
 
- }
+main{
+  flex: 1;
+}
 
 footer{
   width: 100%;
@@ -37,8 +52,8 @@ footer{
   color: white;
 }
 
-img { 
-  width: 500px;
+article img {
+  width: 100%;
 }
 table{
   padding: 16px;
@@ -50,6 +65,55 @@ a{
   text-decoration: none;
   color: black;
 }
-a:hover{
-  color:red;
+a:hover, #active{
+  color:tomato;
+}
+
+section{
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  article img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 22px;
+  }
+
+  article img {
+    width: 100%;
+  }
+
+  td, th {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  td, th {
+    font-size: 14px;
+  }
 }
