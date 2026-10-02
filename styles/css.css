@@ -41,11 +41,8 @@ header, main{
   padding: 16px 4px;
 }
 
-main{
-  flex: 1;
-}
-
 footer{
+  margin-top: auto;
   width: 100%;
   padding: 16px 52px;
   background-color: black;

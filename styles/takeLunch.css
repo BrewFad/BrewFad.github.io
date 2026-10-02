@@ -54,9 +54,126 @@ section > .dishes {
   background-color: grey;
 }
 
+/* Форма заказа */
+.order {
+  margin-top: 30px;
+}
+
+.order h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.order form {
+  display: grid;
+  grid-template-columns: 382px max-content;
+  justify-content: center;
+}
+
+.form-block {
+  line-height: normal;
+}
+
+.form-block h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.order label,
+.order p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.order label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+
+.order input,
+.order select,
+.order textarea,
+.order button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.order input[type="text"],
+.order input[type="email"],
+.order input[type="tel"],
+.order input[type="time"],
+.order select,
+.order textarea {
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  height: 30px;
+  margin-bottom: 18px;
+  padding: 0 8px;
+  border: 1px solid #767676;
+  background-color: white;
+}
+
+.order textarea {
+  height: 100px;
+  padding: 4px 8px;
+}
+
+/* чекбокс и радиокнопки — слева от своей подписи */
+.order input[type="checkbox"],
+.order input[type="radio"] {
+  float: left;
+  clear: left;
+  margin: 3px 6px 0 0;
+}
+
+.order input[type="checkbox"] + label {
+  margin-bottom: 18px;
+  white-space: nowrap;
+}
+
+.order input[type="radio"] + label {
+  margin-bottom: 12px;
+}
+
+.order .time-title {
+  margin-bottom: 15px;
+}
+
+.order .hint {
+  margin: -12px 0 18px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.order button {
+  width: 120px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 0;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   section > .dishes {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .order form {
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+  }
+
+  .order input[type="checkbox"] + label {
+    white-space: normal;
   }
 }
 
